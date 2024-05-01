@@ -10,8 +10,8 @@ const data = [
 const ArtisanList = () => {
   return (
     <div className="overflow-x-auto relative shadow-md sm:rounded-lg">
-      <table className="w-full text-sm text-left text-gray-400">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-800">
+      <table className="w-full text-sm text-left text-gray-400 p-[10px]">
+        <thead className="text-xs uppercase bg-white text-gray-800">
           <tr>
             <th scope="col" className="py-3 px-6">
               Artisan
@@ -24,7 +24,7 @@ const ArtisanList = () => {
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className=" ">
           {data.map((row) => (
             <tr
               key={row.id}

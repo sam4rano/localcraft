@@ -20,13 +20,13 @@ const Navbar = () => {
     },
     {
       id: 3,
-      title: "community",
+      title: "Community",
       alt: "community",
       link: "/community",
     },
     {
       id: 4,
-      title: "about us",
+      title: "About us",
       alt: "about us",
       link: "/aboutus",
     },

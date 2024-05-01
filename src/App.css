@@ -1,0 +1,31 @@
+/* Keyframes for animations */
+@keyframes popUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Tailwind animation utilities */
+.animate-popUp {
+    animation: popUp 1s ease-out forwards;
+}
+
+.animate-slideUp {
+    animation: slideUp 1s 0.5s ease-out forwards;
+}

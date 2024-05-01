@@ -1,15 +1,20 @@
 import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import logo from "../assets/Logo.svg";
 
 const Footer = () => {
   return (
-    <div className="flex flex-row justify-between bg-white p-[30px]">
-      <div className="text-center text-purple-600 font-semibold mb-2 w-[30%]">
-        <div className="w-10 h-10 bg-purple-600 inline-flex justify-center items-center rounded-full text-white mb-2"></div>
-        CraftCorner
+    <div className="flex flex-row justify-between bg-white p-[30px] sm:flex-col sm:align-middle">
+      <div className="text-center flex align-middle items-center justify-center text-purple-600 font-semibold mb-2 w-[30%] sm:mb-[20px]">
+        <img
+          src={logo}
+          alt="church logo"
+          className="w-[40px] sm:w-full h-[40px]"
+        />
+        <h2>CraftCorner</h2>
       </div>
 
-      <div className="flex flex-row justify-between w-[70%]">
+      <div className="flex flex-row justify-between w-[70%] sm:w-full sm:flex-wrap">
         <div className="flex flex-col">
           <span className="font-bold text-gray-700 uppercase mb-2">
             Our link

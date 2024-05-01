@@ -12,6 +12,7 @@ import Shop from "./pages/Shop";
 import Community from "./pages/Community";
 import Login from "./components/auth/Login";
 import Layout from "./utils/Layout";
+import "./App.css";
 
 
 const App = () => {

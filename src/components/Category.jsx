@@ -42,40 +42,46 @@ const Category = () => {
   };
 
   return (
-    <div className="overflow-y-hidden flex flex-col gap-[20px] w-full bg-white">
-      <div className="flex flex-col align-middle items-center h-screen">
-        <div className="flex flex-row justify-between w-full p-[20px]">
+    <div className="overflow-y-hidden flex flex-col gap-[20px] w-full bg-white h-screen">
+      <div className="flex flex-col items-center h-screen w-full">
+        <div className="flex flex-row justify-between w-full p-[20px] items-center h-screen">
           <h2 className="text-black font-medium text-2xl leading-[38px]">
             Recommendation
           </h2>
-          <Link to="/shop" className="text-black font-medium text-sm leading-[20px]">
+          <Link
+            to="/shop"
+            className="text-white font-medium text-sm leading-[20px] rounded-full bg-purple-600 p-[10px] w-[120px] text-center hover:bg-purple-400"
+          >
             See more
           </Link>
         </div>
-        <ul className="flex flex-row justify-center items-center w-full p-[20px]">
-          {tabs.map((tab) => (
-            <li
-              key={tab.id}
-              onClick={() => handleTabChange(tab.id)}
-              className={`cursor-pointer flex justify-center items-center flex-col w-full text-black p-[5px] rounded-[6px] ${
-                activeTab === tab.id ? "active bg-black text-white" : "text-black bg-white"
-              }`}
-            >
-              <p className={`text-dark font-normal text-lg leading-[24px]`}>
-                {tab.title}
-              </p>
-             
-            </li>
-          ))}
-        </ul>
-        <div className=" h-screen">
-          {tabs.map((tab) =>
-            activeTab === tab.id ? (
-              <div key={tab.id} className=" w-full flex">
-                {tab.component}
-              </div>
-            ) : null
-          )}
+        <div className="flex flex-col align-middle justify-center items-center"> 
+          <ul className="flex flex-row justify-center items-center w-full p-[20px] sm:h-screen sm:p-[10px]">
+            {tabs.map((tab) => (
+              <li
+                key={tab.id}
+                onClick={() => handleTabChange(tab.id)}
+                className={`cursor-pointer flex justify-center items-center flex-col w-full text-black p-[5px] rounded-[6px] ${
+                  activeTab === tab.id
+                    ? "active bg-black text-white"
+                    : "text-black bg-white"
+                }`}
+              >
+                <p className={`text-dark font-normal text-lg leading-[24px]`}>
+                  {tab.title}
+                </p>
+              </li>
+            ))}
+          </ul>
+          <div className=" flex items-center ">
+            {tabs.map((tab) =>
+              activeTab === tab.id ? (
+                <div key={tab.id} className=" w-full flex p-[10px]">
+                  {tab.component}
+                </div>
+              ) : null
+            )}
+          </div>
         </div>
       </div>
     </div>

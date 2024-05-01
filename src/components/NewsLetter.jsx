@@ -17,17 +17,17 @@ const Newsletter = () => {
           <p className="mb-6">
             Subscribe to our news letter for the latest news craft work update straight to your inbox
           </p>
-          <form onSubmit={handleSubmit} className="flex w-full md:max-w-sm">
+          <form onSubmit={handleSubmit} className="flex w-full md:max-w-sm sm:flex-col sm:align-middle sm:gap-[10px] sm:items-center">
             <input
               type="email"
               placeholder="Enter email address"
-              className="flex-1 appearance-none rounded shadow p-3 text-grey-dark mr-2 focus:outline-none"
+              className="flex-1 appearance-none rounded shadow p-3 text-grey-dark mr-2 focus:outline-none sm:w-full" 
               onChange={(e) => setEmail(e.target.value)}
               required
             />
             <button
               type="submit"
-              className="bg-white text-purple-800 rounded shadow py-3 px-6"
+              className="bg-white text-purple-800 rounded shadow py-3 px-6 sm:w-[200px]"
             >
               Subscribe
             </button>
