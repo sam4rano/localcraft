@@ -19,7 +19,7 @@ const products = [
 
   {
     id: 3,
-    image: paint_two,
+    image: art_one,
     title: "Dior painting",
     price: "$200",
   },

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImg from "../assets/heroimg.png";
 
 const HeroSection = () => {
@@ -10,9 +11,9 @@ const HeroSection = () => {
         <p className="max-w-md text-lg sm:text-center">
           Explore a world of creativity and talent from local artisans
         </p>
-        <button className="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 ">
+        <Link to="/shop" className="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 ">
           Shop Now
-        </button>
+        </Link>
       </div>
       <div className="flex flex-col items-center md:items-end w-[40%] sm:w-full">
         <div className="max-w-xs md:max-w-sm lg:max-w-md">

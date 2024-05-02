@@ -1,25 +1,30 @@
+// Mock data for the products
+import paint_one from "../../assets/painting_one.png";
+import paint_two from "../../assets/painting_two.png";
+import art_one from "../../assets/art_one.png";
+
 const products = [
   {
     id: 1,
-    image: "/src/assets/art_one.png",
-    title: "Black beauty painting",
+    image: paint_one,
+    title: "Black painting",
+    price: "$200",
+  },
+  {
+    id: 2,
+    image: paint_two,
+    title: "Beauty painting",
     price: "$200",
   },
 
   {
     id: 3,
-    image: "/src/assets/painting_two.png",
-    title: "Black beauty painting",
+    image: art_one,
+    title: "Dior painting",
     price: "$200",
   },
-  {
-    id: 2,
-    image: "/src/assets/painting_one.png",
-    title: "Black beauty painting",
-    price: "$200",
-  },
+ 
 ];
-
 const SubMetalwork = () => {
   return (
     <div className="w-[100%] flex flex-row gap-[20px]">
